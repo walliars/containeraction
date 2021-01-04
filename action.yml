@@ -1,0 +1,14 @@
+name: 'my first container action'
+description 'A dry drunk'
+author: 'Walliars Alot'
+inputs:
+  myInput:
+    description: 'greeting to use'
+    required: true
+    default: 'Awesome Skater'
+outputs:
+  myOutput:
+    description: 'total memory'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
